@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ẩn/hiện chi tiết tour</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            color: #000;
+        }
+
+        .tour-card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            max-width: 700px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .mo-ta {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 5px 10px;
+            font-size: 18px;
+            cursor: pointer;
+            border: 1px solid #767676;
+            background-color: #f0f0f0;
+            margin-right: 5px;
+        }
+
+        .chi-tiet {
+            display: none; 
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .chi-tiet h3 {
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .chi-tiet p {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .chi-tiet p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tour-card">
+        <h1>Tour Đà Nẵng 3 ngày 2 đêm</h1>
+        
+        <p class="mo-ta">Khám phá thành phố biển Đà Nẵng với nhiều điểm đến hấp dẫn.</p>
+        
+        <button onclick="hienChiTiet()">Xem chi tiết</button>
+        <button onclick="anChiTiet()">Ẩn chi tiết</button>
+
+        <div id="chiTietTour" class="chi-tiet">
+            <h3>Chi tiết tour</h3>
+            <p>Ngày 1: Tham quan cầu Rồng và biển Mỹ Khê.</p>
+            <p>Ngày 2: Khám phá Bà Nà Hills.</p>
+            <p>Ngày 3: Mua sắm đặc sản và kết thúc tour.</p>
+            <p><strong>Giá tour: 3.500.000 VNĐ</strong></p>
+        </div>
+    </div>
+
+    <!-- Nhúng file JavaScript -->
+    <script src="bai2.js"></script>
+
+</body>
+</html>

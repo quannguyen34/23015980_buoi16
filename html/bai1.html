@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin tour</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 30px;
+            color: #000;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        #noiDungTour {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 1px solid #767676;
+            background-color: #f0f0f0;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Thông tin tour</h1>
+
+    <p id="noiDungTour">Vui lòng bấm nút để xem thông tin tour.</p>
+
+    <button onclick="doiNoiDung('dalat')">Tour Đà Lạt</button>
+    <button onclick="doiNoiDung('phuquoc')">Tour Phú Quốc</button>
+    <button onclick="doiNoiDung('hanoi')">Tour Hà Nội</button>
+
+    <!-- Nhúng file JavaScript -->
+    <script src="bai1.js"></script>
+
+</body>
+</html>
