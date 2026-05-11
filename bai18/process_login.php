@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $stmt->get_result();
 
     if ($row = $result->fetch_assoc()) {
-        if (password_verify($pass, $row['password'])) {
+        if (password_verify($pass, $row['PASSWORD'])) {
             $_SESSION['user_id'] = $row['id'];
             $_SESSION['full_name'] = $row['full_name'];
             header("Location: home.php");
